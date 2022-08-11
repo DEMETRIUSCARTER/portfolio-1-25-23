@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D. Carter's Domain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div id="header">
+        <div class="container">
+            <nav>
+          <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1> DEMETRIUS <span>CARTER</span> </h1>
+            <p>ALL CODE , <span>NO GIMMICKS</span> </p>
+        </div>
+        </div>
+</div>
+<!-- ---------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/User.jpg" alt="man in hat">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+                <p>HUSBAND, FATHER, ENTREPRENEUR, GRAPHIC DESIGNER AND SOON TO BE WEB DEVELOPER ALL IN ONE.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('Experience')">EXPERIENCE</p>
+                    <p class="tab-links" onclick="opentab('Education')">EDUCATION</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>WEB DEVELOPMENT</span></li>
+                        <li><span>VISUAL EFFECTS AND MOTION GRAPHICS</span></li>
+                        <li><span>GRAPHIC DESIGN</span></li>
+                     </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2014 - PRESENT FREELANCE GRAPHIC DESIGNER</span></li>
+                        <li><span>2014 - PRESENT FREELANCE VISUAL EFFECTS AND MOTION GRAPHICS ARTIST</span></li>
+                       
+                     </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>BACHELORS DEGREE / VISUAL EFFECTS AND MOTION GRAPHICS / THE ART INSTITUTE OF HOUSTON</span></li>
+                        <li><span>FULL STACK DEVELOPMENT / THE UNIVERSITY OF TEXAS CENTER FOR PROFESSIONAL EDUCATION</span></li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">PORTFOLIO</h1>
+        <div class="portfolio-list">
+            <div class="portfolio">
+               <a href="https://dopeanddedicated.com" target="_blank">
+            <img src="images/work-1.jpg"
+                </a>
+                <div class="layer">
+                    <br>  <h3> <span>PROJECT 1</span> </h3> <br>
+                    <p>A DOPE PROJECT WILL BE HERE SOON. IN THE MEANTIME, CLICK ON THE PIC AND CHECK OUT MY BRAND FOR DADS, DOPE AND DEDICATED.</p>
+                        <a href="#"></a>
+                </div>
+            </div>
+            <div class="portfolio">
+                <a href="https://dopeanddedicated.com" target="_blank">
+                    <img src="images/work-1.jpg"
+                </a>
+                       
+                <div class="layer">
+                    <br>  <h3> <span>PROJECT 2</span> </h3> <br>
+                      <p>A DOPE PROJECT WILL BE HERE SOON. IN THE MEANTIME, CLICK ON THE PIC AND CHECK OUT MY BRAND FOR DADS, DOPE AND DEDICATED.</p>
+                          <a href="#"></a>
+                  </div>
+            </div>
+            <div class="portfolio">
+                <a href="https://dopeanddedicated.com" target="_blank">
+                    <img src="images/work-1.jpg"
+                </a>
+                       
+            <div class="layer">
+                    <br>  <h3> <span>PROJECT 3</span> </h3> <br>
+                      <p>A DOPE PROJECT WILL BE HERE SOON. IN THE MEANTIME, CLICK ON THE PIC AND CHECK OUT MY BRAND FOR DADS, DOPE AND DEDICATED.</p>
+                          <a href="#"></a>
+                  </div>
+            </div>
+           </div>
+    </div>
+</div>
+
+
+    </div>
+</div>
+<!-- ---------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT</h1>
+                <p>DemetriusCarter@Gmail.com</p> <br>
+                <p>619-245-3169</p> <br>
+                <a href="https://www.linkedin.com/in/demetrius-carter-20546256" target="_blank">LinkedIn</a> <br>
+                </div>
+            </div>
+    </div>
+</div>
+    
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for (tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
+
+</body>
+</html>
