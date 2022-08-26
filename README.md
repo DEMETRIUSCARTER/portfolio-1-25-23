@@ -1,5 +1,5 @@
 # Project Name
-Demetrius Carter's Professional Portfolio
+Demetrius Carter's Portfolio
 
 
 ## Table of Contents
